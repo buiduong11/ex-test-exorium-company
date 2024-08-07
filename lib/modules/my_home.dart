@@ -38,7 +38,7 @@ class MyHomePage extends StatelessWidget {
           Row(
             children: [
               _buildAuthorInfo(),
-              _buildLogo(ImageConstant.imgHeaderRight),
+              _buildLogo('assets/images/hi.png'),
             ],
           ),
         ],

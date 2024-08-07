@@ -2,7 +2,7 @@ import 'package:ex_test/share/widgets/base_button.dart';
 import 'package:flutter/material.dart';
 
 class CustomElevatedButton extends BaseButton {
-  CustomElevatedButton({
+  const CustomElevatedButton({
     super.key,
     this.decoration,
     this.leftIcon,
