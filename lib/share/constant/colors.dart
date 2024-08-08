@@ -15,8 +15,9 @@ class ColorConstants {
   static const Color lightGreenColor = Color(0xFF94E059);
   static const Color orangeColor = Color(0xFFFF5630);
   static const Color lightBlueColor = Color(0xFF5C9CE4);
-  static const Color green = Color(0XFF0EA772);
-  static const Color blue = Colors.blue;
+  static const Color green = Color(0xFF29B363);
+
+  static const Color blue = Color(0xFF3583DD);
 }
 
 Color hexToColor(String hex) {

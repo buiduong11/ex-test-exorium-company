@@ -11,7 +11,7 @@ class CustomTextStyles {
       );
   static get textElevatedButton => const TextStyle(
         color: Colors.white,
-        fontWeight: FontWeight.bold,
+        fontWeight: FontWeight.w500,
         fontSize: 14,
       );
   static get textBody => const TextStyle(

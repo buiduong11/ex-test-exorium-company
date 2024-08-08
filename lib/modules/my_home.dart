@@ -38,7 +38,7 @@ class MyHomePage extends StatelessWidget {
           Row(
             children: [
               _buildAuthorInfo(),
-              _buildLogo('assets/images/hi.png'),
+              _buildLogo(ImageConstant.imgHeaderRight),
             ],
           ),
         ],
@@ -104,16 +104,16 @@ class MyHomePage extends StatelessWidget {
 
   Widget _buildActionButtons() {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 30.v),
+      padding: EdgeInsets.symmetric(vertical: 30.v, horizontal: 40),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           _buildButton(
             'This is Funny!',
-            ColorConstants.nearlyDarkBlue,
+            ColorConstants.blue,
           ),
           _buildButton(
-            'This is not Funny.',
+            'This is not funny.',
             ColorConstants.green,
           ),
         ],
@@ -122,15 +122,22 @@ class MyHomePage extends StatelessWidget {
   }
 
   Widget _buildButton(String text, Color color) {
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        backgroundColor: color,
-        shape: const RoundedRectangleBorder(borderRadius: BorderRadius.zero),
-      ),
-      onPressed: () {},
-      child: Text(
-        text,
-        style: CustomTextStyles.textElevatedButton,
+    return SizedBox(
+      width: 140.h,
+      child: InkWell(
+        onTap: () {},
+        child: Container(
+          decoration: BoxDecoration(
+            color: color,
+            borderRadius: BorderRadius.zero,
+          ),
+          padding: const EdgeInsets.symmetric(vertical: 8.0),
+          alignment: Alignment.center,
+          child: Text(
+            text,
+            style: CustomTextStyles.textElevatedButton,
+          ),
+        ),
       ),
     );
   }
