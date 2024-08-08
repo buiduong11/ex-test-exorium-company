@@ -30,7 +30,7 @@ class MyHomePage extends StatelessWidget {
 
   Widget _buildHeader() {
     return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20.h, vertical: 10.v),
+      padding: EdgeInsets.symmetric(horizontal: 20.h, vertical: 5.v),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -73,7 +73,7 @@ class MyHomePage extends StatelessWidget {
   Widget _buildBanner() {
     return Container(
       width: double.infinity,
-      height: 160.v,
+      height: 150.v,
       color: ColorConstants.green,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -94,7 +94,7 @@ class MyHomePage extends StatelessWidget {
 
   Widget _buildJokeContent() {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(30, 60, 30, 100),
+      padding: const EdgeInsets.fromLTRB(30, 60, 30, 130),
       child: Text(
         'A child asked his father, "How were people born?" So his father said, "Adam and Eve made babies, then their babies became adults and made babies, and so on." The child then went to his mother, asked her the same question and she told him, "We were monkeys then we evolved to become like we are now." The child ran back to his father and said, "You lied to me!" His father replied, "No, your mom was talking about her side of the family."',
         style: CustomTextStyles.textBody,
@@ -104,7 +104,7 @@ class MyHomePage extends StatelessWidget {
 
   Widget _buildActionButtons() {
     return Padding(
-      padding: EdgeInsets.symmetric(vertical: 30.v, horizontal: 40),
+      padding: EdgeInsets.symmetric(vertical: 25.v, horizontal: 45),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
@@ -144,7 +144,7 @@ class MyHomePage extends StatelessWidget {
 
   Widget _buildFooter() {
     return Padding(
-      padding: const EdgeInsets.fromLTRB(20, 0, 20, 50),
+      padding: const EdgeInsets.fromLTRB(20, 20, 20, 50),
       child: Column(
         children: [
           Text(
